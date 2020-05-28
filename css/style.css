@@ -12,6 +12,42 @@
     margin: 0;
 }
 
+/*************
+FADE-IN EFFECT
+*************/
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in-element {
+    animation: fade-in 1.5s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/************
+TYPOGRAPHY
+************/
+
 h1 {
     font-weight: 400;
     font-size: 5rem;
@@ -106,14 +142,12 @@ h1 {
     z-index: -1;
 }
 
-.s-7 {}
 
 .s-7 .little-text {
     margin-top: 1rem;
     text-align: center;
 }
 
-.s-8 {}
 
 .s-8 .big-text {
     margin-bottom: 50vh;
@@ -298,9 +332,10 @@ h1 {
     ;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url('/images/sky.jpg');
     ;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 0;
 }
 
 footer {
