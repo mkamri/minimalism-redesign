@@ -40,7 +40,31 @@ FADE-IN EFFECT
     animation: fade-in 1.5s;
 }
 
+.fade-in-element-fast {
+    animation: fade-in 1.5s;
+}
+
+.fade-in-element-medium {
+    animation: fade-in 2s;
+}
+
+.fade-in-element-slow {
+    animation: fade-in 2.5s;
+}
+
 .hidden {
+    opacity: 0;
+}
+
+.hide-fast {
+    opacity: 0;
+}
+
+.hide-medium {
+    opacity: 0;
+}
+
+.hide-slow {
     opacity: 0;
 }
 

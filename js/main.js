@@ -12,7 +12,7 @@
             var element = elements[i];
             var positionFromTop = elements[i].getBoundingClientRect().top;
 
-            if (positionFromTop - windowHeight <= 0) {
+            if (positionFromTop - windowHeight <= 0 && element.classList.contains('hidden')) {
                 element.classList.add('fade-in-element');
                 element.classList.remove('hidden');
             }
